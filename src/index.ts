@@ -1,1 +1,7 @@
-console.log("hello");
+import apollo from "./middleware/apollo";
+
+const main = () => {
+	apollo();
+};
+
+main();
