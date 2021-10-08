@@ -1,0 +1,29 @@
+{
+  "name": "idmp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "start:dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fnfbraga/idmp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fnfbraga/idmp/issues"
+  },
+  "homepage": "https://github.com/fnfbraga/idmp#readme",
+  "devDependencies": {
+    "@types/node": "^16.10.3",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
