@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/fnfbraga/idmp#readme",
   "devDependencies": {
+    "@playlyfe/gql": "^2.6.2",
     "@types/node": "^16.10.3",
     "rimraf": "^3.0.2",
     "ts-node": "^10.2.1",
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "@neo4j/graphql": "^2.2.0",
+    "@neo4j/graphql-ogm": "^2.1.0",
     "apollo-server": "^3.3.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",

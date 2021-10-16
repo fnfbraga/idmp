@@ -1,8 +1,8 @@
-import { ApolloServer, gql } from "apollo-server";
-import { neo4j_db, neo4j_password, neo4j_user } from "../config";
-const { Neo4jGraphQL } = require("@neo4j/graphql");
+import { Neo4jGraphQL } from "@neo4j/graphql";
+import { ApolloServer } from "apollo-server";
 import neo4j from "neo4j-driver";
-import { typeDefs } from "../graphql/types";
+import { neo4j_db, neo4j_password, neo4j_user } from "../config";
+import typeDefs from "../graphql/schema";
 
 export default () => {
 	const driver = neo4j.driver(neo4j_db, neo4j.auth.basic(neo4j_user, neo4j_password));
